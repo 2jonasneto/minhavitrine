@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <title>@ViewData["Title"] - felicias</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/felicias.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lato:300i,400,400i,700%7CMontserrat:400,500,600,700%7CPlayfair+Display:400,700,700i%7COswald:400,700,700i">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+            @RenderBody()
+
+
+    <footer class="section bg-default section-xs-type-1 footer-minimal">
+        <div class="container">
+            <div class="row row-30 align-items-lg-center justify-content-lg-between">
+                <div class="col-lg-2">
+                    <div class="footer-brand"><a href="index.html"><img src="images/logo-dark-main-257x84.png" alt="" width="257" height="84" /></a></div>
+                </div>
+                <div class="col-lg-10">
+                    <div class="footer-nav">
+                        <ul class="rd-navbar-nav">
+                            <li class="rd-nav-item active"><a class="rd-nav-link" href="index.html">Home</a></li>
+                            <li class="rd-nav-item"><a class="rd-nav-link" href="about-us.html">About</a></li>
+                            <li class="rd-nav-item"><a class="rd-nav-link" href="typography.html">Typography</a></li>
+                            <li class="rd-nav-item"><a class="rd-nav-link" href="contacts.html">Contacts</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <section class="bg-gray-100 section-xs text-center">
+        <div class="container">
+            <p class="rights"><span>&copy;&nbsp;</span><span class="copyright-year"></span>. All Rights Reserved. Design by <a href="https://www.templatemonster.com">TemplateMonster</a></p>
+        </div>
+    </section>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="js/core.min.js"></script>
+    <script src="js/script.js"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
